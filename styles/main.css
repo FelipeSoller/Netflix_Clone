@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
 :root {
-    --vermelho: #E50914;
-    --preto: #141414;
+    --azul: #031150;
+    --amarelo: rgb(255, 187, 0);    
 }
 
 * {
@@ -12,7 +12,7 @@
 }
 
 body {
-    background: var(--preto);
+    background: var(--azul);
     font-family: 'Lato', 'Times New Roman', Times, serif;
     color: white;
 }
@@ -32,11 +32,12 @@ header .container {
     justify-content: space-between;
     margin-top: 1.2rem;
     margin-bottom: 1.2rem;    
+    color: var(--amarelo);   
 }
 
-header img {
-    width: 5.8rem;
-    height: 1.8rem;
+header .container h3 {
+    font-size: 2rem;
+    color: var(--amarelo);   
 }
 
 header nav {
@@ -46,26 +47,30 @@ header nav {
 header nav a {
     font-size: 1rem;
     margin-right: 1.2rem;
-    color: white;
+    color: var(--amarelo);
     text-decoration: none;
     transition: 0.3s;
 }
 
 header nav a:hover {
-    color: #AAA;
+    color: rgb(255, 145, 0);
+}
+
+header .container .menu i {
+    margin-right: 1.5rem;
 }
 
 /* BANNER */
 
 .banner {
-    height: 30rem;    
+    height: 25rem;    
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%), url('/images/vikings-folder.jpg');
     background-size: cover;
     font-size: 1rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-end;
+    justify-content: center;    
 }
     
 .banner .title {
@@ -82,29 +87,25 @@ header nav a:hover {
     width: 70%;
 }
 
-button:last-child {
-    margin-left: 1rem;
-}
-
-button {
+.buttons a {
+    text-decoration: none;
     background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    color: white;
-    font-weight: 700;
+    color: white;    
     padding: 1rem 1.5rem;
     cursor: pointer;
     transition: 0.3s;
     border-radius: 5px;
     margin-bottom: 1rem;
+    margin-right: 1rem;
 }
 
-button:hover {
+.buttons a:hover {
     background-color: white;    
-    color: var(--preto);
+    color: var(--azul);
     font-weight: 700;
 }
 
-button i {
+.buttons i {
     margin-right: 0.5rem;
 }
 
@@ -118,4 +119,9 @@ button i {
 
 .movies-carousel {
     margin-top: 0.5rem;
+}
+
+.movies-carousel h1 {
+    margin: 1rem 0;
+    color: var(--amarelo);
 }
